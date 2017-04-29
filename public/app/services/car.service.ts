@@ -34,13 +34,6 @@ export class CarService {
             .then(res => { return res.json() });
     }
 
-    // getCarsSmall() {
-    //     return this.http.get(this.carsUrl)
-    //         .toPromise()
-    //         .then(res => <Car[]> res.json().data)
-    //         .then(data => { return data; });
-    // }
-
     updateCar(car: Car) {
         this.addCar(car);
     }
